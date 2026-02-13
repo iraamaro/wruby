@@ -29,7 +29,7 @@ etc.).
 
 ## Running
 
-1. `wruby` is based off of Ruby 3.3.0 (use `rbenv` or `rvm` to avoid privilege conflicts)
+1. `wruby` is based off of Ruby 3.3.8 (use `rbenv` or `rvm` to avoid privilege conflicts)
 2. Install bundler: `gem install bundler`
 3. Install gems: `bundle install`
 4. Run `make build` in the root directory
