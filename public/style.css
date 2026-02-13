@@ -35,9 +35,6 @@ main {
     margin: 0;
     padding: 0 15px;
 }
-main p {
-    text-align: justify;
-}
 
 h1 {
     border-bottom: 1px solid;
@@ -154,11 +151,10 @@ footer {
         background-color: black;
     }
     header nav a {
-        background: black;
         border-color: white;
     }
-    main {
-        background: #1d1d1d;
+    main, header nav a {
+        background: #2d2d2d;
     }
     pre {
         background: black;
