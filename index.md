@@ -1,18 +1,19 @@
-# wruby
+# simplesapenas
 
-**wruby is a single file, minimal site generator written in Ruby.** (*Not* the ruby gem)
+**Simples Apenas é um site institucional minimalista escrito em Ruby.**
 
-The "w" is silent...
+## Sobre
 
-## Features
+Simples Apenas é uma equipe dedicada a tornar a web um pouco mais interessante e divertida.
 
-* Fast, OS-agnostic site generator
-* Auto-generated, valid [RSS feed](/index.rss)
-* Custom `header.html` and `footer.html` templates
-* Not much else (this is a *good* thing!)
+## Projetos
 
-You can learn more by reading [the official README](https://git.sr.ht/~bt/wruby).
+Estamos trabalhando em projetos como Pika para massificação da escrita de blogs, Album Whale e Letterbird.
 
-## Latest Posts
+## Contato
 
-[comment]: # (Your latest posts will be added here on build)
+Você pode nos contatar através das redes sociais ou por email.
+
+## Blog
+
+Confira nosso [blog](/posts) onde escrevemos sobre nossos projetos e ideias.
