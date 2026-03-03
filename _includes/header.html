@@ -1,22 +1,74 @@
-<!doctype html>
-<html lang="pt">
+<!DOCTYPE html>
+<html class="dark" lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="color-scheme" content="dark light">
-	<link rel="icon" href="/public/images/favicon.ico">
-	<title>{{TITLE}}</title>
-	<link href="/index.rss" type="application/rss+xml" rel="alternate" title="RSS feed for blog posts" />
-	<link rel="stylesheet" href="/public/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>{{TITLE}}</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com " rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com " rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#a7c080", // Soft green accent common in minimal terminal themes
+                        "background-light": "#f2f2f2",
+                        "background-dark": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        display: ["JetBrains Mono", "monospace"],
+                        mono: ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+        }
+        .ascii-art {
+            line-height: 1.2;
+            font-weight: bold;
+        }
+        a {
+            transition: all 0.2s ease;
+        }
+        .container-slim {
+            max-width: 680px;
+        }
+    </style>
 </head>
-
-<body id="top">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="/">home</a></li><li><a href="/about">about</a></li><li><a href="/websites">websites</a></li><li><a href="/posts">blog</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
+<body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-300 transition-colors duration-300 selection:bg-primary selection:text-background-dark">
+<div class="container-slim mx-auto px-6 py-12 md:py-24">
+<header class="mb-12">
+<div class="mb-6 text-primary">
+<pre class="ascii-art text-xs sm:text-sm">  ______
+ /_  __/___  ____ _
+  / / / __ \/ __ `/
+ / / / /_/ / /_/ /
+/_/  \____/\__, /
+          /____/ 
+                </pre>
+</div>
+<h1 class="text-2xl font-bold mb-4 tracking-tight text-stone-900 dark:text-stone-100">
+                simplesapenas.com
+            </h1>
+<nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/">Lab</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/posts">Blog</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/about">Sobre</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/websites">Projetos</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/contact">Newsletter ↗</a>
+</nav>
+</header>
+<hr class="border-stone-300 dark:border-stone-800 mb-12"/>
+<main class="space-y-12 mb-20">
 

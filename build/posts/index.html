@@ -1,24 +1,76 @@
-<!doctype html>
-<html lang="pt">
+<!DOCTYPE html>
+<html class="dark" lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="color-scheme" content="dark light">
-	<link rel="icon" href="/public/images/favicon.ico">
-	<title>Blog</title>
-	<link href="/index.rss" type="application/rss+xml" rel="alternate" title="RSS feed for blog posts" />
-	<link rel="stylesheet" href="/public/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com " rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com " rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#a7c080", // Soft green accent common in minimal terminal themes
+                        "background-light": "#f2f2f2",
+                        "background-dark": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        display: ["JetBrains Mono", "monospace"],
+                        mono: ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+        }
+        .ascii-art {
+            line-height: 1.2;
+            font-weight: bold;
+        }
+        a {
+            transition: all 0.2s ease;
+        }
+        .container-slim {
+            max-width: 680px;
+        }
+    </style>
 </head>
-
-<body id="top">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="/">home</a></li><li><a href="/about">about</a></li><li><a href="/websites">websites</a></li><li><a href="/posts">blog</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
+<body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-300 transition-colors duration-300 selection:bg-primary selection:text-background-dark">
+<div class="container-slim mx-auto px-6 py-12 md:py-24">
+<header class="mb-12">
+<div class="mb-6 text-primary">
+<pre class="ascii-art text-xs sm:text-sm">  ______
+ /_  __/___  ____ _
+  / / / __ \/ __ `/
+ / / / /_/ / /_/ /
+/_/  \____/\__, /
+          /____/ 
+                </pre>
+</div>
+<h1 class="text-2xl font-bold mb-4 tracking-tight text-stone-900 dark:text-stone-100">
+                simplesapenas.com
+            </h1>
+<nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/">Lab</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/posts">Blog</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/about">Sobre</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/websites">Projetos</a>
+<a class="hover:text-primary dark:hover:text-primary underline decoration-stone-400 dark:decoration-stone-600 underline-offset-4" href="/contact">Newsletter ↗</a>
+</nav>
+</header>
+<hr class="border-stone-300 dark:border-stone-800 mb-12"/>
+<main class="space-y-12 mb-20">
 
 <h1 id="blog">Blog</h1>
 
@@ -28,23 +80,31 @@
 <li><span>2024-07-20</span><a href='/posts/markdown-examples/'>Markdown Examples in wruby</a></li>
 </ul>
 </main>
-
-<footer role="contentinfo">
-    <ul id="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/posts">Posts</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/websites">Websites</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/index.rss">RSS</a></li>
-        <li><a href="#top">&uarr; Top of the page</a></li>
-    </ul>
-    <small>
-        Built with <a href="https://wruby.site">wruby</a>. <br>
-        Maintained with ♥ for the web. <br>
-        The content for this site is <a
-          href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>.<br>
-        The <a href="https://codeberg.org/btxx/wruby">code for this project</a>
-        is <a href="https://choosealicense.com/licenses/mit/">MIT</a>.
-    </small>
+<hr class="border-stone-300 dark:border-stone-800 mb-8"/>
+<footer class="space-y-8 pb-12">
+<div class="flex flex-wrap gap-x-6 gap-y-2 text-xs uppercase tracking-widest text-stone-500 dark:text-stone-500">
+<a class="hover:text-primary transition-colors" href="/posts">Bluesky</a>
+<a class="hover:text-primary transition-colors" href="/websites">Mastodon</a>
+<a class="hover:text-primary transition-colors" href="/about">Políticas</a>
+<a class="hover:text-primary transition-colors" href="/contact">Status</a>
+</div>
+<div class="flex justify-between items-center text-[10px] text-stone-400 dark:text-stone-600 uppercase tracking-tighter">
+<p>© 2024 Simples Apenas LLC — Menos é Mais.</p>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>System Online</span>
+</div>
+</div>
 </footer>
+</div>
+<button class="fixed bottom-6 right-6 p-2 bg-stone-200 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 rounded-full shadow-sm hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
+<svg class="h-5 w-5 dark:hidden block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<svg class="h-5 w-5 hidden dark:block text-stone-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+
+</body>
+</html>
