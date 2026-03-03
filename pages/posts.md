@@ -1,3 +1,3 @@
-# All Posts
+# Blog
 
-This page contains a list of all your blog posts.
+Confira nossos artigos e atualizações sobre os projetos.

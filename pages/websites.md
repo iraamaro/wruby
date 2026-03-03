@@ -1,11 +1,9 @@
-# Websites Built with wruby
+# Websites
 
-Send an email to bt [at] btxx [dot] org if you would like me to add your wruby-generated website to this list.
+Conheça alguns sites construídos com nossa plataforma.
 
-* *This website...*
-* [btxx.org](https://btxx.org)
-* [jsfree.org](https://jsfree.org)
-* [adast.dk](https://adast.dk)
-* [arena.adast.dk](https://arena.adast.dk)
-* [friendclub.lol](https://friendclub.lol)
-* [veeronniecaw.space](https://veeronniecaw.space)
+## Projetos
+
+* [Pika](https://pika.page/) - Plataforma de blogging
+* [Album Whale](https://albumwhale.com/) - Gerenciamento de álbuns de fotos
+* [Letterbird](https://letterbird.co/) - Aplicativo de email
