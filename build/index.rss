@@ -8,7 +8,7 @@
     <title>simplesapenas RSS Feed</title>
     <link>https:simplesapenas.com</link>
     <description>The official RSS Feed for https:simplesapenas.com</description>
-    <pubDate>Tue, 03 Mar 2026 19:08:55 +0000</pubDate>
+    <pubDate>Tue, 03 Mar 2026 19:42:23 +0000</pubDate>
     <item>
       <title>Exploring Futurama: A Dive into the World of Tomorrow</title>
       <link>https:simplesapenas.com/posts/futurama/</link>
@@ -264,6 +264,6 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
       <pubDate>Sat, 20 Jul 2024 12:00:00 +0000</pubDate>
       <dc:date>2024-07-20T12:00:00+00:00</dc:date>
     </item>
-    <dc:date>2026-03-03T19:08:55+00:00</dc:date>
+    <dc:date>2026-03-03T19:42:23+00:00</dc:date>
   </channel>
 </rss>
